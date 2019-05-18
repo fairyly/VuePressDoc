@@ -1,0 +1,23 @@
+{
+  "name": "vuepressdoc",
+  "version": "1.0.0",
+  "description": "vuepress doc",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev",
+    "docs:build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fairyly/VuePressDoc.git"
+  },
+  "keywords": [
+    "vuepress"
+  ],
+  "author": "fairyly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fairyly/VuePressDoc/issues"
+  },
+  "homepage": "https://github.com/fairyly/VuePressDoc#readme"
+}
