@@ -13,8 +13,8 @@ module.exports = {
   },
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
+      { text: '主页', link: '/' },
+      { text: '简介', link: '/guide/' },
       {
         text: '前端',
         items: [
@@ -22,7 +22,7 @@ module.exports = {
         ]
       },
       {
-        text: 'Blog',
+        text: '博客',
         items: [
           { text: '2019', link: '/blog/2019/' },
           { text: '2018', link: '/blog/2018/' },
