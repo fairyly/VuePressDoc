@@ -1,3 +1,5 @@
+const sidebarConfig = require('../config/sidebars')
+
 module.exports = {
   title: '大前端',
   description: '大前端',
@@ -13,6 +15,12 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
+      {
+        text: '前端',
+        items: [
+          { text: '面试', link: '/interview/' }
+        ]
+      },
       {
         text: 'Blog',
         items: [
@@ -31,30 +39,6 @@ module.exports = {
       },
       { text: 'Github', link: 'https://github.com/fairyly/VuePressDoc' },
     ],
-    sidebar: {
-      '/guide/': [
-        ''     /* /guide/ */
-      ],
-      '/blog/2016/': [   /* /blog/ */
-        '',
-        '201601',
-        '201602'
-      ],
-      '/blog/2017/': [
-        '',
-        '201701',
-        '201702'
-      ],
-      '/blog/2018/': [
-        '',
-        '201801',
-        '201802'
-      ],
-      '/blog/2019/': [
-        '', 
-        '201901',
-        '201902'
-      ]
-    }
+    sidebar: sidebarConfig
 }
 };
