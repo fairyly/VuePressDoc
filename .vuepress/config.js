@@ -30,11 +30,11 @@ module.exports = {
           { text: '2016', link: '/blog/2016/' }
         ]
       },
+      { text: '关于', link: '/about/' },
       {
         text: '选择语言',
         items: [
-          { text: '中文', link: '/guide/' },
-          { text: 'Japanese', link: '/language/japanese' }
+          { text: '中文', link: '/guide/' }
         ]
       },
       { text: 'Github', link: 'https://github.com/fairyly/VuePressDoc' },

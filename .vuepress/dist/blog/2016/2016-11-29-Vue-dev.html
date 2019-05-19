@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2016-11-29 Vue2.0+Mint UI+Vue-router+Vux构建移动端APP | 大前端</title>
+    <meta name="description" content="大前端">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.587b07ae.css" as="style"><link rel="preload" href="/assets/js/app.cb2f3e4e.js" as="script"><link rel="preload" href="/assets/js/2.5cf661ab.js" as="script"><link rel="preload" href="/assets/js/13.b4a9b790.js" as="script"><link rel="prefetch" href="/assets/js/10.6edd5b2c.js"><link rel="prefetch" href="/assets/js/11.ed8d3fe8.js"><link rel="prefetch" href="/assets/js/12.d397e97e.js"><link rel="prefetch" href="/assets/js/14.88608e24.js"><link rel="prefetch" href="/assets/js/15.583fc3b1.js"><link rel="prefetch" href="/assets/js/16.866f0b63.js"><link rel="prefetch" href="/assets/js/17.55f966ea.js"><link rel="prefetch" href="/assets/js/18.299353db.js"><link rel="prefetch" href="/assets/js/19.8086b9ea.js"><link rel="prefetch" href="/assets/js/20.7947dbff.js"><link rel="prefetch" href="/assets/js/21.9ac29fa4.js"><link rel="prefetch" href="/assets/js/22.caa17e9f.js"><link rel="prefetch" href="/assets/js/23.65f1b0f5.js"><link rel="prefetch" href="/assets/js/24.dd033d15.js"><link rel="prefetch" href="/assets/js/25.8ee61651.js"><link rel="prefetch" href="/assets/js/26.cb09d518.js"><link rel="prefetch" href="/assets/js/27.e5fe9c07.js"><link rel="prefetch" href="/assets/js/28.f7f78ae8.js"><link rel="prefetch" href="/assets/js/29.187376d5.js"><link rel="prefetch" href="/assets/js/3.4837dac5.js"><link rel="prefetch" href="/assets/js/30.531b5584.js"><link rel="prefetch" href="/assets/js/31.cbec92f4.js"><link rel="prefetch" href="/assets/js/32.f542a84c.js"><link rel="prefetch" href="/assets/js/33.7707ec34.js"><link rel="prefetch" href="/assets/js/34.2c724513.js"><link rel="prefetch" href="/assets/js/35.375fc9b3.js"><link rel="prefetch" href="/assets/js/36.35912207.js"><link rel="prefetch" href="/assets/js/37.58f775de.js"><link rel="prefetch" href="/assets/js/38.ed1d2b96.js"><link rel="prefetch" href="/assets/js/39.3aed53fc.js"><link rel="prefetch" href="/assets/js/4.f23d031f.js"><link rel="prefetch" href="/assets/js/40.c1e98c24.js"><link rel="prefetch" href="/assets/js/41.f89be07b.js"><link rel="prefetch" href="/assets/js/42.0371a131.js"><link rel="prefetch" href="/assets/js/43.ca278539.js"><link rel="prefetch" href="/assets/js/44.498c5368.js"><link rel="prefetch" href="/assets/js/45.1517b7cc.js"><link rel="prefetch" href="/assets/js/46.7db37a00.js"><link rel="prefetch" href="/assets/js/47.efa0ba94.js"><link rel="prefetch" href="/assets/js/48.b2ab3767.js"><link rel="prefetch" href="/assets/js/49.a9641e1d.js"><link rel="prefetch" href="/assets/js/5.0599b8f1.js"><link rel="prefetch" href="/assets/js/50.936a7ff2.js"><link rel="prefetch" href="/assets/js/51.a294c9c7.js"><link rel="prefetch" href="/assets/js/52.772ca44d.js"><link rel="prefetch" href="/assets/js/53.de0339af.js"><link rel="prefetch" href="/assets/js/54.f1924de1.js"><link rel="prefetch" href="/assets/js/55.16530f86.js"><link rel="prefetch" href="/assets/js/56.aa26797c.js"><link rel="prefetch" href="/assets/js/57.4da1457a.js"><link rel="prefetch" href="/assets/js/58.0aedfca7.js"><link rel="prefetch" href="/assets/js/59.2b1b6945.js"><link rel="prefetch" href="/assets/js/6.d5f10989.js"><link rel="prefetch" href="/assets/js/60.4a355351.js"><link rel="prefetch" href="/assets/js/61.60118d5b.js"><link rel="prefetch" href="/assets/js/62.0c2ab7c9.js"><link rel="prefetch" href="/assets/js/63.e9623a18.js"><link rel="prefetch" href="/assets/js/64.93edc6b6.js"><link rel="prefetch" href="/assets/js/65.e2942482.js"><link rel="prefetch" href="/assets/js/66.acdc9509.js"><link rel="prefetch" href="/assets/js/67.0a008e58.js"><link rel="prefetch" href="/assets/js/68.a2961cb5.js"><link rel="prefetch" href="/assets/js/69.e48dfb6f.js"><link rel="prefetch" href="/assets/js/7.ee25fc58.js"><link rel="prefetch" href="/assets/js/70.73c3f828.js"><link rel="prefetch" href="/assets/js/71.2cf47f32.js"><link rel="prefetch" href="/assets/js/72.a6879060.js"><link rel="prefetch" href="/assets/js/73.886a4115.js"><link rel="prefetch" href="/assets/js/74.225d6793.js"><link rel="prefetch" href="/assets/js/75.249f5c8a.js"><link rel="prefetch" href="/assets/js/76.60e4ca95.js"><link rel="prefetch" href="/assets/js/77.686c3d37.js"><link rel="prefetch" href="/assets/js/78.bfd72ce0.js"><link rel="prefetch" href="/assets/js/79.96ab8018.js"><link rel="prefetch" href="/assets/js/8.57ea2b29.js"><link rel="prefetch" href="/assets/js/80.de3546ec.js"><link rel="prefetch" href="/assets/js/81.d1856ee2.js"><link rel="prefetch" href="/assets/js/82.42021e5d.js"><link rel="prefetch" href="/assets/js/83.30110c61.js"><link rel="prefetch" href="/assets/js/84.476aef1d.js"><link rel="prefetch" href="/assets/js/85.5a445dd9.js"><link rel="prefetch" href="/assets/js/86.a6207d93.js"><link rel="prefetch" href="/assets/js/87.004d0d19.js"><link rel="prefetch" href="/assets/js/88.9710ecb2.js"><link rel="prefetch" href="/assets/js/89.3925643a.js"><link rel="prefetch" href="/assets/js/9.bbf0f84d.js"><link rel="prefetch" href="/assets/js/90.6631dc40.js"><link rel="prefetch" href="/assets/js/91.eb8dcd03.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.587b07ae.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/" class="nav-link">面试</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Blog</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/2019/" class="nav-link">2019</a></li><li class="dropdown-item"><!----> <a href="/blog/2018/" class="nav-link">2018</a></li><li class="dropdown-item"><!----> <a href="/blog/2017/" class="nav-link">2017</a></li><li class="dropdown-item"><!----> <a href="/blog/2016/" class="nav-link router-link-active">2016</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fairyly/VuePressDoc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/" class="nav-link">面试</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Blog</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/2019/" class="nav-link">2019</a></li><li class="dropdown-item"><!----> <a href="/blog/2018/" class="nav-link">2018</a></li><li class="dropdown-item"><!----> <a href="/blog/2017/" class="nav-link">2017</a></li><li class="dropdown-item"><!----> <a href="/blog/2016/" class="nav-link router-link-active">2016</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fairyly/VuePressDoc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/2016/" class="sidebar-link">2016 diary</a></li><li><a href="/blog/2016/2016-10-19-hello-2016.html" class="sidebar-link">2016-10-19</a></li><li><a href="/blog/2016/2016-10-20-git-github-note.html" class="sidebar-link">2016-10-20 git</a></li><li><a href="/blog/2016/2016-10-21-hexo-markdown-command.html" class="sidebar-link">2016-10-21 Hexo</a></li><li><a href="/blog/2016/2016-10-22-js-module-bundle.html" class="sidebar-link">2016-10-22 webpack</a></li><li><a href="/blog/2016/2016-10-23-jq-plugin-dev.html" class="sidebar-link">2016-10-23 jQuery插件开发</a></li><li><a href="/blog/2016/2016-10-29-wx-app-dev.html" class="sidebar-link">2016-10-29 微信小程序开发</a></li><li><a href="/blog/2016/2016-11-29-Vue-dev.html" class="active sidebar-link">2016-11-29 Vue2.0+Mint UI+Vue-router+Vux构建移动端APP</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/2016/2016-11-29-Vue-dev.html#做了一个小demo" class="sidebar-link">做了一个小demo</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-11-29-Vue-dev.html#全局安装-vue-cli" class="sidebar-link">全局安装 vue-cli</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-11-29-Vue-dev.html#创建一个基于-webpack-模板的新项目" class="sidebar-link">创建一个基于 webpack 模板的新项目</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-11-29-Vue-dev.html#安装依赖" class="sidebar-link">安装依赖</a></li></ul></li><li><a href="/blog/2016/2016-12-29-js-this.html" class="sidebar-link">2016-12-29 js中this在不同环境的指向</a></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="_2016-11-29-vue2-0-mint-ui-vue-router-vux构建移动端app"><a href="#_2016-11-29-vue2-0-mint-ui-vue-router-vux构建移动端app" aria-hidden="true" class="header-anchor">#</a> 2016-11-29 Vue2.0+Mint UI+Vue-router+Vux构建移动端APP</h1> <p>** 本该拼搏的年龄，却想太多，做太少！~~~~~~ **</p> <p>刚开始接触的时候，Vue还是1.0的版本，学习的还是一些很简单的东西，</p> <p>还不知道什么vuex,vue-router，前端发展的真的很快，几个月的时间，</p> <p>angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是react，还是Vue，</p> <p>他们都是前端MVVM(Model–View–ViewModel)框架；</p> <p>先到官网学习了Vue2.0的教程,知道Vue的安装、常用的语法、构造器、属性和方法、</p> <p>生命周期以及渲染、事件、表单控件和组件；</p> <p>看了尤雨溪写的学习vue2.0的顺序</p> <ul><li>起步</li></ul> <ol><li><p>扎实的 <code>JavaScript / HTML / CSS</code> 基本功。这是前置条件。</p></li> <li><p>通读官方教程 <code>(guide)</code> 的基础篇。不要用任何构建工具，就只用最简单的 <code>&lt;script&gt;</code>，</p> <p>把教程里的例子模仿一遍，理解用法。不推荐上来就直接用 vue-cli 构建项目，尤其是如果没有 Node/Webpack 基础。</p></li> <li><p>照着官网上的示例，自己想一些类似的例子，模仿着实现来练手，加深理解。</p></li> <li><p>阅读官方教程进阶篇的前半部分，到『自定义指令 (Custom Directive) 』为止。</p> <p>着重理解 Vue 的响应式机制和组件生命周期。『渲染函数<code>（Render Function)</code>』如果理解吃力可以先跳过。</p></li> <li><p>阅读教程里关于路由和状态管理的章节，然后根据需要学习 vue-router 和 vuex。</p> <p>同样的，先不要管构建工具，以跟着文档里的例子理解用法为主。</p></li> <li><p>走完基础文档后，如果你对于基于 Node 的前端工程化不熟悉，就需要补课了。</p> <p>下面这些严格来说并不是 Vue 本身的内容，也不涵盖所有的前端工程化知识，</p> <p>但对于大型的 Vue 工程是前置条件，也是合格的『前端工程师』应当具备的知识。</p></li></ol> <ul><li>前端生态/工程化</li></ul> <ol><li><p>了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。</p> <p>学习 <code>ES2015/16</code> 的新特性，理解 ES2015 modules，适当关注还未成为标准的提案。</p></li> <li><p>学习命令行的使用。建议用 Mac。</p></li> <li><p>学习 Node.js 基础。建议使用 nvm 这样的工具来管理机器上的 Node 版本，</p> <p>并且将 npm 的 registry 注册表配置为淘宝的镜像源。</p> <p>至少要了解 npm 的常用命令，npm scripts 如何使用，语义化版本号规则，</p> <p>CommonJS 模块规范（了解它和 ES2015 Modules 的异同），Node 包的解析规则，</p> <p>以及 Node 的常用 API。应当做到可以自己写一些基本的命令行程序。</p> <p>注意最新版本的 <code>Node (6+)</code> 已经支持绝大部分 ES2015 的特性，可以借此巩固 ES2015。</p></li> <li><p>了解如何使用 / 配置 Babel 来将 ES2015 编译到 ES5 用于浏览器环境。</p></li> <li><p>学习 Webpack。Webpack 是一个极其强大同时也复杂的工具，</p> <p>作为起步，理解它的『一切皆模块』的思想，并基本了解其常用配置选项和 loader 的概念/使用方法即可，</p></li></ol> <p>比如如何搭配 Webpack 使用 Babel。学习 Webpack 的一个挑战在于其本身文档的混乱，建议多搜索搜索，</p> <p>应该还是有质量不错的第三方教程的。英文好的建议阅读 Webpack 2.0 的文档，比起 1.0 有极大的改善，</p> <p>但需要注意和 1.0 的不兼容之处。</p> <ul><li>Vue 进阶</li></ul> <ol><li><p>有了 <code>Node</code> 和 <code>Webpack</code> 的基础，可以通过 <code>vue-cli</code> 来搭建基于 <code>Webpack</code> ，</p> <p>并且支持单文件组件的项目了。建议用 <code>webpack-simple</code> 这个模板开始，</p> <p>并阅读官方教程进阶篇剩余的内容以及 <code>vue-loader</code> 的文档，了解一些进阶配置。</p> <p>有兴趣的可以自己亲手从零开始搭一个项目加深理解。</p></li> <li><p>根据例子尝试在 <code>Webpack</code> 模板基础上整合 <code>vue-router</code> 和 <code>vuex</code></p></li> <li><p>深入理解 <code>Virtual DOM</code> 和『渲染函数 (<code>Render Functions</code>)』这一章节(可选择性使用 <code>JSX</code>)，</p> <p>理解模板和渲染函数之间的对应关系，了解其使用方法和适用场景。</p></li> <li><p>（可选）根据需求，了解服务端渲染的使用（需要配合 Node 服务器开发的知识）。</p> <p>其实更重要的是理解它所解决的问题并搞清楚你是否需要它。</p></li> <li><p>阅读开源的 Vue 应用、组件、插件源码，自己尝试编写开源的 Vue 组件、插件。</p></li></ol> <p>作者：尤雨溪<br>
+链接：https://zhuanlan.zhihu.com/p/23134551</p> <h2 id="做了一个小demo"><a href="#做了一个小demo" aria-hidden="true" class="header-anchor">#</a> 做了一个小demo</h2> <p>是在node环境中的，所以就用构建工具安装<code>Vue-cli、mint-ui、vue-router、Vuex</code>;</p> <h2 id="全局安装-vue-cli"><a href="#全局安装-vue-cli" aria-hidden="true" class="header-anchor">#</a> 全局安装 vue-cli</h2> <p>$ npm install --global vue-cli</p> <h2 id="创建一个基于-webpack-模板的新项目"><a href="#创建一个基于-webpack-模板的新项目" aria-hidden="true" class="header-anchor">#</a> 创建一个基于 webpack 模板的新项目</h2> <p>$ vue init webpack my-project</p> <h2 id="安装依赖"><a href="#安装依赖" aria-hidden="true" class="header-anchor">#</a> 安装依赖</h2> <p>$ cd my-project</p> <p>$ npm install</p> <p>$ npm run dev</p> <p>这样一个很简单的Vue小项目已经完成。</p> <p>默认服务器的端口是8080，如果需要改变端口号，</p> <p>可以到src/config/index.js文件中port端口号就可以；</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>dev: {
+    env: require('./dev.env'),
+    port: 8080,
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    proxyTable: {},
+    cssSourceMap: false
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>安装Mint UI命令:</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>文档：http://mint-ui.github.io/docs/#!/zh-cn2  
+// install# for Vue 1.x  
+npm install mint-ui@1 -S  
+### for Vue 2.0  
+npm install mint-ui -S  
+
+// import all components  
+import Vue from 'vue';import Mint from 'mint-ui';
+Vue.use(Mint);  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>安装Vue-router命令：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>文档：http://router.vuejs.org/zh-cn/  
+npm install vue-router如果在一个模块化工程中使用它，必须要通过 Vue.use() 明确地安装路由功能：  
+import Vue from 'vue'  
+import VueRouter from 'vue-router'  
+Vue.use(VueRouter)  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>安装Vuex命令：Vuex文档：http://vuex.vuejs.org/zh-cn/</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install vuex在一个模块化的打包系统中，您必须显式地通过 Vue.use() 来安装
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li><p>Vuex：状态管理模式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>Vuex是Vue的状态管理模式，每一个 Vuex 应用的核心就是 store（仓库）。<br>
+&quot;store&quot; 基本上就是一个容器，它包含着你的应用中大部分的状态(即 state)；</p> <ul><li><p>State：单一状态树<br>
+从 store 实例中读取状态最简单的方法就是在计算属性中返回某个状态；<br>
+初始 state 对象：<br>
+// 如果在模块化构建系统中，请确保在开头调用了 Vue.use(Vuex)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const store = new Vuex.Store({
+  state: {
+    count: 0
+  }
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>当一个组件需要获取多个状态时候，使用 mapState 辅助函数帮助我们生成计算属性；</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>computed: mapState({
+    // 箭头函数可使代码更简练
+    count: state =&gt; state.count,
+
+    // 传字符串参数 'count' 等同于 `state =&gt; state.count`
+    countAlias: 'count'
+}）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>当映射的计算属性的名称与 state 的子节点名称相同时，我们也可以给 <code>mapState</code> 传一个字符串数组。如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>computed: {
+     ...mapState(['headNav'])
+   }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>Getters</p> <p>Vuex 允许我们在 store 中定义<code>『getters』</code>（可以认为是 store 的计算属性）。</p> <p>Getters 接受 state 作为其第一个参数：</p> <blockquote></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>const store = new Vuex.Store({
+  state: {
+    audio: {
+      songUrl: '',
+      imgUrl: 'http://m.kugou.com/v3/static/images/index/logo_kugou.png',
+      title: '',
+      singer: '',
+      currentLength: 0,
+      songLength: 0,
+      currentFlag: false
+    },
+    head: {
+      toggle: false,
+      title: '',
+      style: {'background': 'rgba(43,162,251,0)'}
+    },
+    headNav: 'head-nav1',
+    audioLoadding: false,
+    detailPlayerFlag: false,
+    showPlayer: false,
+    listenCount: 0,
+    isPlay: true
+  },
+  getters: {
+    audio: state=&gt;state.audio,
+    head: state=&gt;state.head,
+    audioLoadding: state=&gt;state.audioLoadding,
+    detailPlayerFlag: state=&gt;state.detailPlayerFlag,
+    showPlayer: state=&gt;state.showPlayer,
+    isPlay: state=&gt;state.isPlay
+  }
+}）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>mapGetters 辅助函数仅仅是将 store 中的 getters 映射到局部计算属性</p></li> <li><p>Mutations：更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。</p> <p>Vuex 中的 mutations 非常类似于事件：</p> <p>每个 mutation 都有一个字符串的 事件类型 (type) 和 一个 回调函数 (handler)。</p> <p>这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数；</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const store = new Vuex.Store({
+  state: {
+    audio: {
+      songUrl: '',
+      imgUrl: 'http://m.kugou.com/v3/static/images/index/logo_kugou.png',
+      title: '',
+      singer: '',
+      currentLength: 0,
+      songLength: 0,
+      currentFlag: false
+    },
+    head: {
+      toggle: false,
+      title: '',
+      style: {'background': 'rgba(43,162,251,0)'}
+    },
+    headNav: 'head-nav1',
+    audioLoadding: false,
+    detailPlayerFlag: false,
+    showPlayer: false,
+    listenCount: 0,
+    isPlay: true
+  },
+  getters: {
+    audio: state=&gt;state.audio,
+    head: state=&gt;state.head,
+    audioLoadding: state=&gt;state.audioLoadding,
+    detailPlayerFlag: state=&gt;state.detailPlayerFlag,
+    showPlayer: state=&gt;state.showPlayer,
+    isPlay: state=&gt;state.isPlay
+  },
+  mutations: {
+    setAudio(state, audio){
+      if (!state.listenCount) {
+        state.showPlayer = true;  //首次进入应用时不可打开播放详情
+      }
+      state.listenCount++;
+      state.audio = {...(state.audio), ...audio};
+    },
+    setAudioTime(state, time){
+      state.audio.currentLength = time;
+    },
+    setCurrent(state, flag){
+      state.audio.currentFlag = flag;
+    },
+    showHead(state, flag){
+      state.head.toggle = flag;
+    },
+    setHeadTitle(state, title){
+      state.head.title = title;
+    },
+    setHeadStyle(state, style){
+      state.head.style = style;
+    },
+    resetHeadStyle: state=&gt; {
+      state.head.style = {'background': 'rgba(43,162,251,0)'};
+    },
+    toggleAudioLoadding: (state, flag)=&gt; {
+      state.audioLoadding = flag;
+    },
+    setHeadNav: (state, index)=&gt; {
+      state.headNav = 'head-nav' + index;
+    },
+    showDetailPlayer: (state, flag)=&gt; {
+      state.detailPlayerFlag = flag;
+    },
+    showPlayer: (state, flag)=&gt; {
+      state.showPlayer = flag;
+    },
+    isPlay: (state, flag)=&gt; {
+      state.isPlay = flag;
+    },
+    setLrc: (state, lrc)=&gt; {
+      state.audio = {...(state.audio), lrc}
+    }
+  }
+});
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br></div></div><p>可以在组件中使用 <code>this.$store.commit('xxx')</code> 提交 mutation，</p> <p>或者使用 mapMutations 辅助函数将组件中的 methods 映射为 <code>store.commit</code> 调用（需要在根节点注入 store）。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { mapMutations } from 'vuex'export default {
+  // ...
+  methods: {
+    ...mapMutations([
+      'increment' // 映射 this.increment() 为 this.$store.commit('increment')
+    ]),
+    ...mapMutations({
+      add: 'increment' // 映射 this.add() 为 this.$store.commit('increment')
+    })
+  }}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li> <li><p>Action 类似于 mutation，不同在于：</p> <p>Action 提交的是 mutation，而不是直接变更状态。</p> <p>Action 可以包含任意异步操作。</p> <p>Action 通过 store.dispatch 方法触发：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const store = new Vuex.Store({
+  state: {
+    audio: {
+      songUrl: '',
+      imgUrl: 'http://m.kugou.com/v3/static/images/index/logo_kugou.png',
+      title: '',
+      singer: '',
+      currentLength: 0,
+      songLength: 0,
+      currentFlag: false
+    },
+    head: {
+      toggle: false,
+      title: '',
+      style: {'background': 'rgba(43,162,251,0)'}
+    },
+    headNav: 'head-nav1',
+    audioLoadding: false,
+    detailPlayerFlag: false,
+    showPlayer: false,
+    listenCount: 0,
+    isPlay: true
+  },
+  getters: {
+    audio: state=&gt;state.audio,
+    head: state=&gt;state.head,
+    audioLoadding: state=&gt;state.audioLoadding,
+    detailPlayerFlag: state=&gt;state.detailPlayerFlag,
+    showPlayer: state=&gt;state.showPlayer,
+    isPlay: state=&gt;state.isPlay
+  },
+  mutations: {
+    setAudio(state, audio){
+      if (!state.listenCount) {
+        state.showPlayer = true;  //首次进入应用时不可打开播放详情
+      }
+      state.listenCount++;
+      state.audio = {...(state.audio), ...audio};
+    },
+    setAudioTime(state, time){
+      state.audio.currentLength = time;
+    },
+    setCurrent(state, flag){
+      state.audio.currentFlag = flag;
+    },
+    showHead(state, flag){
+      state.head.toggle = flag;
+    },
+    setHeadTitle(state, title){
+      state.head.title = title;
+    },
+    setHeadStyle(state, style){
+      state.head.style = style;
+    },
+    resetHeadStyle: state=&gt; {
+      state.head.style = {'background': 'rgba(43,162,251,0)'};
+    },
+    toggleAudioLoadding: (state, flag)=&gt; {
+      state.audioLoadding = flag;
+    },
+    setHeadNav: (state, index)=&gt; {
+      state.headNav = 'head-nav' + index;
+    },
+    showDetailPlayer: (state, flag)=&gt; {
+      state.detailPlayerFlag = flag;
+    },
+    showPlayer: (state, flag)=&gt; {
+      state.showPlayer = flag;
+    },
+    isPlay: (state, flag)=&gt; {
+      state.isPlay = flag;
+    },
+    setLrc: (state, lrc)=&gt; {
+      state.audio = {...(state.audio), lrc}
+    }
+  },
+  actions: {
+    getSong({commit,state}, hash){
+      commit('toggleAudioLoadding', true);
+      Vue.http.get('http://lavyun.applinzi.com/apis/getKugouSong.php?hash=' + hash).then(res=&gt; {
+        var json_obj = JSON.parse(res.data);
+        var songUrl = json_obj.url,
+          imgUrl = json_obj.imgUrl.split('{size}').join('100'),
+          title = json_obj.songName,
+          singer = json_obj.choricSinger,
+          songLength = json_obj.timeLength,
+          currentLength = 0,
+          audio = {songUrl, imgUrl, title, singer, songLength, currentLength};
+        commit('setAudio', audio);
+        commit('toggleAudioLoadding', false);
+      });
+    },
+    getLrc({commit,state}, hash){
+      Vue.http.get('http://lavyun.applinzi.com/apis/getLrc.php?hash=' + hash).then(res=&gt; {
+        commit('setLrc', res.data);
+      })
+    }
+  }
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br></div></div></li> <li><p>modules:</p> <p>Vuex 允许我们将 store 分割到模块（module）。
+每个模块拥有自己的 state、mutation、action、getters、甚至是嵌套子模块——从上至下进行类似的分割：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const moduleA = {
+  state: { ... },
+  mutations: { ... },
+  actions: { ... },
+  getters: { ... }}const moduleB = {
+  state: { ... },
+  mutations: { ... },
+  actions: { ... }}const store = new Vuex.Store({
+  modules: {
+    a: moduleA,
+    b: moduleB  }})
+
+store.state.a // -&gt; moduleA 的状态
+
+store.state.b // -&gt; moduleB 的状态
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>这几个state，getters， mutations，actions，modules是Vuex的接个核心概念；</p> <p>还有一个需要安装的插件，Vue-resource：主要用来发送http请求的时候用的；</p> <p>安装命令：</p> <p>npm install vue-resource</p> <p>这些组件安装后，开始编写demo，前面已经安装了vue-cli,创建了基于webpack模板的新项目，</p> <p>一般的单页面应用，入口文件就是main.js,以后都是用模板组件来构建项目页面的；</p> <p>先在App.vue中添加组件，分别创建各个组件对应的模板文件，</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!--&lt;img src=&quot;./assets/logo.png&quot;&gt;--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>headlogo</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>headlogo</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hello</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>hello</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head-nav</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head-nav</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>main<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>keep-alive</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-view</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-view</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>keep-alive</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!--&lt;conlist&gt;&lt;/conlist&gt; 原直接加载组件，后改为路由--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> Hello <span class="token keyword">from</span> <span class="token string">'./components/Hello'</span>
+<span class="token keyword">import</span> Headlogo <span class="token keyword">from</span> <span class="token string">'./components/Headlogo'</span>
+<span class="token keyword">import</span> HeadNav <span class="token keyword">from</span> <span class="token string">'./components/HeadNav'</span>
+<span class="token keyword">import</span> Conlist <span class="token keyword">from</span> <span class="token string">'./components/Conlist'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'app'</span><span class="token punctuation">,</span>
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    Hello<span class="token punctuation">,</span>Headlogo<span class="token punctuation">,</span>HeadNav<span class="token punctuation">,</span>Conlist
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">body</span><span class="token punctuation">{</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span>0px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span>0px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#app</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
+  <span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> justify<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #2c3e50<span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span>40px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.main</span><span class="token punctuation">{</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div></li></ul></li></ul> <p>因为用到了路由，所以main.js中需要引入路由，引入前面安装的东西；</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>import Vue from 'vue'
+import App from './App'
+import router from './router'
+import store from './store'
+import VueResource from 'vue-resource'
+import Mint from 'mint-ui'
+import 'mint-ui/lib/style.css'
+import '../static/style.css'
+Vue.use(Mint)
+Vue.use(VueResource)
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  store,
+  template: '<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>App</span><span class="token punctuation">/&gt;</span></span>',
+  components: { App }
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>src目录下创建router目录，新建index.js路由文件，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vue from 'vue'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+const router = new VueRouter({
+  routes:[{
+    path:'/index',component:require('../views/index')
+  },{
+    path:'/rank',component:require('../views/rank')
+  },{
+    path:'/ringtone',component:require('../views/ringtone')
+  },{
+    path:'/plist',component:require('../views/plist')
+  },{
+    path:'/singer',component:require('../views/singer')
+  },{
+    path:'/search',component:require('../views/search')
+  },{
+    path:'*',redirect:'/index'
+  }]
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>src目录下新建views目录，创建各个路由的模板文件；</p> <p>src目录下新建store目录，创建index.js状态管理文件；</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vue from 'vue'
+import Vuex from 'vuex'
+import VueResource from 'vue-resource'
+Vue.use(Vuex);
+Vue.use(VueResource)
+
+const store = new Vuex.Store({
+  state: {
+    audio: {
+      songUrl: '',
+      imgUrl: 'http://m.kugou.com/v3/static/images/index/logo_kugou.png',
+      title: '',
+      singer: '',
+      currentLength: 0,
+      songLength: 0,
+      currentFlag: false
+    },
+    head: {
+      toggle: false,
+      title: '',
+      style: {'background': 'rgba(43,162,251,0)'}
+    },
+    headNav: 'head-nav1',
+    audioLoadding: false,
+    detailPlayerFlag: false,
+    showPlayer: false,
+    listenCount: 0,
+    isPlay: true
+  },
+  getters: {
+    audio: state=&gt;state.audio,
+    head: state=&gt;state.head,
+    audioLoadding: state=&gt;state.audioLoadding,
+    detailPlayerFlag: state=&gt;state.detailPlayerFlag,
+    showPlayer: state=&gt;state.showPlayer,
+    isPlay: state=&gt;state.isPlay
+  },
+  mutations: {
+    setAudio(state, audio){
+      if (!state.listenCount) {
+        state.showPlayer = true;  //首次进入应用时不可打开播放详情
+      }
+      state.listenCount++;
+      state.audio = {...(state.audio), ...audio};
+    },
+    setAudioTime(state, time){
+      state.audio.currentLength = time;
+    },
+    setCurrent(state, flag){
+      state.audio.currentFlag = flag;
+    },
+    showHead(state, flag){
+      state.head.toggle = flag;
+    },
+    setHeadTitle(state, title){
+      state.head.title = title;
+    },
+    setHeadStyle(state, style){
+      state.head.style = style;
+    },
+    resetHeadStyle: state=&gt; {
+      state.head.style = {'background': 'rgba(43,162,251,0)'};
+    },
+    toggleAudioLoadding: (state, flag)=&gt; {
+      state.audioLoadding = flag;
+    },
+    setHeadNav: (state, index)=&gt; {
+      state.headNav = 'head-nav' + index;
+    },
+    showDetailPlayer: (state, flag)=&gt; {
+      state.detailPlayerFlag = flag;
+    },
+    showPlayer: (state, flag)=&gt; {
+      state.showPlayer = flag;
+    },
+    isPlay: (state, flag)=&gt; {
+      state.isPlay = flag;
+    },
+    setLrc: (state, lrc)=&gt; {
+      state.audio = {...(state.audio), lrc}
+    }
+  },
+  actions: {
+    getSong({commit,state}, hash){
+      commit('toggleAudioLoadding', true);
+      Vue.http.get('http://lavyun.applinzi.com/apis/getKugouSong.php?hash=' + hash).then(res=&gt; {
+        var json_obj = JSON.parse(res.data);
+        var songUrl = json_obj.url,
+          imgUrl = json_obj.imgUrl.split('{size}').join('100'),
+          title = json_obj.songName,
+          singer = json_obj.choricSinger,
+          songLength = json_obj.timeLength,
+          currentLength = 0,
+          audio = {songUrl, imgUrl, title, singer, songLength, currentLength};
+        commit('setAudio', audio);
+        commit('toggleAudioLoadding', false);
+      });
+    },
+    getLrc({commit,state}, hash){
+      Vue.http.get('http://lavyun.applinzi.com/apis/getLrc.php?hash=' + hash).then(res=&gt; {
+        commit('setLrc', res.data);
+      })
+    }
+  }
+});
+
+export default store
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br></div></div><p>src目录下新建jsons目录,  创建数据listindex.js和listplist文件；</p> <p>demo参考一个酷狗app写的，主要是熟悉使用构建工具搭建Vue应用，</p> <p>练习使用Vue-router、Vuex、以及Mint UI，</p> <p><a href="https://github.com/fairyly/myvue/tree/demo02" target="_blank" rel="noopener noreferrer">demo地址：<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <blockquote><blockquote><blockquote><p>come on!</p></blockquote></blockquote></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/2016/2016-10-29-wx-app-dev.html" class="prev">
+          2016-10-29 微信小程序开发
+        </a></span> <span class="next"><a href="/blog/2016/2016-12-29-js-this.html">
+          2016-12-29 js中this在不同环境的指向
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cb2f3e4e.js" defer></script><script src="/assets/js/2.5cf661ab.js" defer></script><script src="/assets/js/13.b4a9b790.js" defer></script>
+  </body>
+</html>

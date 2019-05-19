@@ -2,10 +2,19 @@ module.exports = {
   '/guide/': [
     ''     /* /guide/ */
   ],
+  '/about/': [
+    ''     /* /guide/ */
+  ],
   '/blog/2016/': [   /* /blog/ */
     '',
-    '201601',
-    '201602'
+    '2016-10-19-hello-2016',
+    '2016-10-20-git-github-note',
+    '2016-10-21-hexo-markdown-command',
+    '2016-10-22-js-module-bundle',
+    '2016-10-23-jq-plugin-dev',
+    '2016-10-29-wx-app-dev',
+    '2016-11-29-Vue-dev',
+    '2016-12-29-js-this'
   ],
   '/blog/2017/': [
     '',

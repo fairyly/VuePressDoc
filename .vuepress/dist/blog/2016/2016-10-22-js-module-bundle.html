@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2016-10-22 webpack | 大前端</title>
+    <meta name="description" content="大前端">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.587b07ae.css" as="style"><link rel="preload" href="/assets/js/app.cb2f3e4e.js" as="script"><link rel="preload" href="/assets/js/2.5cf661ab.js" as="script"><link rel="preload" href="/assets/js/10.6edd5b2c.js" as="script"><link rel="prefetch" href="/assets/js/11.ed8d3fe8.js"><link rel="prefetch" href="/assets/js/12.d397e97e.js"><link rel="prefetch" href="/assets/js/13.b4a9b790.js"><link rel="prefetch" href="/assets/js/14.88608e24.js"><link rel="prefetch" href="/assets/js/15.583fc3b1.js"><link rel="prefetch" href="/assets/js/16.866f0b63.js"><link rel="prefetch" href="/assets/js/17.55f966ea.js"><link rel="prefetch" href="/assets/js/18.299353db.js"><link rel="prefetch" href="/assets/js/19.8086b9ea.js"><link rel="prefetch" href="/assets/js/20.7947dbff.js"><link rel="prefetch" href="/assets/js/21.9ac29fa4.js"><link rel="prefetch" href="/assets/js/22.caa17e9f.js"><link rel="prefetch" href="/assets/js/23.65f1b0f5.js"><link rel="prefetch" href="/assets/js/24.dd033d15.js"><link rel="prefetch" href="/assets/js/25.8ee61651.js"><link rel="prefetch" href="/assets/js/26.cb09d518.js"><link rel="prefetch" href="/assets/js/27.e5fe9c07.js"><link rel="prefetch" href="/assets/js/28.f7f78ae8.js"><link rel="prefetch" href="/assets/js/29.187376d5.js"><link rel="prefetch" href="/assets/js/3.4837dac5.js"><link rel="prefetch" href="/assets/js/30.531b5584.js"><link rel="prefetch" href="/assets/js/31.cbec92f4.js"><link rel="prefetch" href="/assets/js/32.f542a84c.js"><link rel="prefetch" href="/assets/js/33.7707ec34.js"><link rel="prefetch" href="/assets/js/34.2c724513.js"><link rel="prefetch" href="/assets/js/35.375fc9b3.js"><link rel="prefetch" href="/assets/js/36.35912207.js"><link rel="prefetch" href="/assets/js/37.58f775de.js"><link rel="prefetch" href="/assets/js/38.ed1d2b96.js"><link rel="prefetch" href="/assets/js/39.3aed53fc.js"><link rel="prefetch" href="/assets/js/4.f23d031f.js"><link rel="prefetch" href="/assets/js/40.c1e98c24.js"><link rel="prefetch" href="/assets/js/41.f89be07b.js"><link rel="prefetch" href="/assets/js/42.0371a131.js"><link rel="prefetch" href="/assets/js/43.ca278539.js"><link rel="prefetch" href="/assets/js/44.498c5368.js"><link rel="prefetch" href="/assets/js/45.1517b7cc.js"><link rel="prefetch" href="/assets/js/46.7db37a00.js"><link rel="prefetch" href="/assets/js/47.efa0ba94.js"><link rel="prefetch" href="/assets/js/48.b2ab3767.js"><link rel="prefetch" href="/assets/js/49.a9641e1d.js"><link rel="prefetch" href="/assets/js/5.0599b8f1.js"><link rel="prefetch" href="/assets/js/50.936a7ff2.js"><link rel="prefetch" href="/assets/js/51.a294c9c7.js"><link rel="prefetch" href="/assets/js/52.772ca44d.js"><link rel="prefetch" href="/assets/js/53.de0339af.js"><link rel="prefetch" href="/assets/js/54.f1924de1.js"><link rel="prefetch" href="/assets/js/55.16530f86.js"><link rel="prefetch" href="/assets/js/56.aa26797c.js"><link rel="prefetch" href="/assets/js/57.4da1457a.js"><link rel="prefetch" href="/assets/js/58.0aedfca7.js"><link rel="prefetch" href="/assets/js/59.2b1b6945.js"><link rel="prefetch" href="/assets/js/6.d5f10989.js"><link rel="prefetch" href="/assets/js/60.4a355351.js"><link rel="prefetch" href="/assets/js/61.60118d5b.js"><link rel="prefetch" href="/assets/js/62.0c2ab7c9.js"><link rel="prefetch" href="/assets/js/63.e9623a18.js"><link rel="prefetch" href="/assets/js/64.93edc6b6.js"><link rel="prefetch" href="/assets/js/65.e2942482.js"><link rel="prefetch" href="/assets/js/66.acdc9509.js"><link rel="prefetch" href="/assets/js/67.0a008e58.js"><link rel="prefetch" href="/assets/js/68.a2961cb5.js"><link rel="prefetch" href="/assets/js/69.e48dfb6f.js"><link rel="prefetch" href="/assets/js/7.ee25fc58.js"><link rel="prefetch" href="/assets/js/70.73c3f828.js"><link rel="prefetch" href="/assets/js/71.2cf47f32.js"><link rel="prefetch" href="/assets/js/72.a6879060.js"><link rel="prefetch" href="/assets/js/73.886a4115.js"><link rel="prefetch" href="/assets/js/74.225d6793.js"><link rel="prefetch" href="/assets/js/75.249f5c8a.js"><link rel="prefetch" href="/assets/js/76.60e4ca95.js"><link rel="prefetch" href="/assets/js/77.686c3d37.js"><link rel="prefetch" href="/assets/js/78.bfd72ce0.js"><link rel="prefetch" href="/assets/js/79.96ab8018.js"><link rel="prefetch" href="/assets/js/8.57ea2b29.js"><link rel="prefetch" href="/assets/js/80.de3546ec.js"><link rel="prefetch" href="/assets/js/81.d1856ee2.js"><link rel="prefetch" href="/assets/js/82.42021e5d.js"><link rel="prefetch" href="/assets/js/83.30110c61.js"><link rel="prefetch" href="/assets/js/84.476aef1d.js"><link rel="prefetch" href="/assets/js/85.5a445dd9.js"><link rel="prefetch" href="/assets/js/86.a6207d93.js"><link rel="prefetch" href="/assets/js/87.004d0d19.js"><link rel="prefetch" href="/assets/js/88.9710ecb2.js"><link rel="prefetch" href="/assets/js/89.3925643a.js"><link rel="prefetch" href="/assets/js/9.bbf0f84d.js"><link rel="prefetch" href="/assets/js/90.6631dc40.js"><link rel="prefetch" href="/assets/js/91.eb8dcd03.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.587b07ae.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/" class="nav-link">面试</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Blog</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/2019/" class="nav-link">2019</a></li><li class="dropdown-item"><!----> <a href="/blog/2018/" class="nav-link">2018</a></li><li class="dropdown-item"><!----> <a href="/blog/2017/" class="nav-link">2017</a></li><li class="dropdown-item"><!----> <a href="/blog/2016/" class="nav-link router-link-active">2016</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fairyly/VuePressDoc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/" class="nav-link">面试</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Blog</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/2019/" class="nav-link">2019</a></li><li class="dropdown-item"><!----> <a href="/blog/2018/" class="nav-link">2018</a></li><li class="dropdown-item"><!----> <a href="/blog/2017/" class="nav-link">2017</a></li><li class="dropdown-item"><!----> <a href="/blog/2016/" class="nav-link router-link-active">2016</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fairyly/VuePressDoc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/2016/" class="sidebar-link">2016 diary</a></li><li><a href="/blog/2016/2016-10-19-hello-2016.html" class="sidebar-link">2016-10-19</a></li><li><a href="/blog/2016/2016-10-20-git-github-note.html" class="sidebar-link">2016-10-20 git</a></li><li><a href="/blog/2016/2016-10-21-hexo-markdown-command.html" class="sidebar-link">2016-10-21 Hexo</a></li><li><a href="/blog/2016/2016-10-22-js-module-bundle.html" class="active sidebar-link">2016-10-22 webpack</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#webpack入门" class="sidebar-link">webpack入门</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#全局安装webpack和webpack-dev-server" class="sidebar-link">全局安装webpack和webpack-dev-server:</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#babel-loader-babel就是转码器；" class="sidebar-link">Babel-loader  ,babel就是转码器；</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#css-loader-加载css" class="sidebar-link">CSS-loader  加载css</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#image-loader-加载图片" class="sidebar-link">Image loader 加载图片</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#css-module-加载css-模块" class="sidebar-link">CSS Module 加载css 模块</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#uglifyjs-plugin-js压缩组件" class="sidebar-link">UglifyJs Plugin  js压缩组件</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#html-webpack-plugin-andopen-browser-webpack-plugin-webpack的html和打开浏览器插件" class="sidebar-link">HTML Webpack Plugin andOpen Browser Webpack Plugin  webpack的html和打开浏览器插件</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#environment-flags-环境标志" class="sidebar-link">Environment flags  环境标志</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#code-splitting-代码分离" class="sidebar-link">Code splitting 代码分离</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#code-splitting-withbundle-loader" class="sidebar-link">Code splitting withbundle-loader</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#common-chunk-通用模块" class="sidebar-link">Common chunk  通用模块</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#vendor-chunk" class="sidebar-link">Vendor chunk</a></li><li class="sidebar-sub-header"><a href="/blog/2016/2016-10-22-js-module-bundle.html#exposing-globalvariables暴露全局变量" class="sidebar-link">Exposing globalvariables暴露全局变量</a></li></ul></li><li><a href="/blog/2016/2016-10-23-jq-plugin-dev.html" class="sidebar-link">2016-10-23 jQuery插件开发</a></li><li><a href="/blog/2016/2016-10-29-wx-app-dev.html" class="sidebar-link">2016-10-29 微信小程序开发</a></li><li><a href="/blog/2016/2016-11-29-Vue-dev.html" class="sidebar-link">2016-11-29 Vue2.0+Mint UI+Vue-router+Vux构建移动端APP</a></li><li><a href="/blog/2016/2016-12-29-js-this.html" class="sidebar-link">2016-12-29 js中this在不同环境的指向</a></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="_2016-10-22-webpack"><a href="#_2016-10-22-webpack" aria-hidden="true" class="header-anchor">#</a> 2016-10-22 webpack</h1> <h2 id="webpack入门"><a href="#webpack入门" aria-hidden="true" class="header-anchor">#</a> webpack入门</h2> <blockquote><p>Here !</p></blockquote> <p>Node环境下，</p> <p>Webpack :它做的事情是，分析你的项目结构，找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（<code>Scss，TypeScript</code>等），<br>
+并将其打包为合适的格式以供浏览器使用。<br>
+和gulp,grunt差不多，webpack就是模块加载器兼打包工具</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  It can beused as a module bundler similar to Browserify, and do much more.
+
+  $ browserify main.js &gt; bundle.js
+  # be equivalent to
+  $ webpack main.js bundle.js //和browserify等价
+
+
+  Webpack常用命令：
+  webpack 最基本的启动webpack命令
+  webpack -w 提供watch方法，实时进行打包更新
+  webpack -p 对打包后的文件进行压缩
+  webpack -d 提供SourceMaps，方便调试
+  webpack --colors 输出结果带彩色，比如：会用红色显示耗时较长的步骤
+  webpack --profile 输出性能数据，可以看到每一步的耗时
+  webpack --display-modules 默认情况下 node_modules 下的模块会被隐藏，加上这个参数可以显示这些被隐藏的模块
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="全局安装webpack和webpack-dev-server"><a href="#全局安装webpack和webpack-dev-server" aria-hidden="true" class="header-anchor">#</a> 全局安装webpack和webpack-dev-server:</h2> <p><code>npm install –g webpack webpack-dev-server</code></p> <p>webpack-dev-server是一个小型的node.js</p> <p>Express服务器,它使用webpack-dev-middleware中间件来为通过webpack打包生成的资源文件提供Web服务。</p> <p>它还有一个通过Socket.IO连接着webpack-dev-server服务器的小型运行时程序。<br>
+webpack-dev-server发送关于编译状态的消息到客户端，客户端根据消息作出响应。</p> <p>直接敲命令：webpack-dev-server  打开本机浏览器输入 http://127.0.0.1:8080就可以看到你页面效果；</p> <p>在webpack模块打包中最好先安装依赖，好多组件需要用，使用命令：npm install;</p> <p>可以按照阮一峰做的demo来学习：<br>
+我fork的git地址：https://github.com/fairyly/webpack-demos#demo01-entry-file-source<br>
+怎么使用里面都有介绍的，不过都是英文，马马虎虎应该可以看懂；</p> <p>说个例子，一个小项目下三个文件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    For example, main.js is an entry file.
+    // main.js
+    document.write('&lt;h1&gt;Hello World&lt;/h1&gt;');
+    index.html
+
+    &lt;html&gt;
+    &lt;body&gt;
+      &lt;scripttype=&quot;text/javascript&quot;src=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    Webpack follows webpack.config.js to build bundle.js.
+    // webpack.config.js
+    module.exports = {
+    entry:'./main.js',//entry用来定义入口文件
+    output: {           //output用于定义构建后的文件的输出,有path和filename;
+      filename:'bundle.js'
+    }
+    };
+    //entry中定义构建多个文件时，filename可以对应的更改为[name].js用于定义不同文件构建后的名字
+    $ webpack   //这一个命令就在目录下生成一个bundle.js文件
+    $ webpack-dev-server
+    Launch theserver, visit http://127.0.0.1:8080 .
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="babel-loader-babel就是转码器；"><a href="#babel-loader-babel就是转码器；" aria-hidden="true" class="header-anchor">#</a> Babel-loader  ,babel就是转码器；</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    看demo：
+    main.jsx is a JSX file.
+    constReact=require('react');
+    constReactDOM=require('react-dom');
+
+    ReactDOM.render(
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;,
+      document.querySelector('#wrapper')
+    );
+    index.html
+
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;divid=&quot;wrapper&quot;&gt;&lt;/div&gt;
+        &lt;scriptsrc=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    webpack.config.js
+
+    module.exports = {
+      entry:'./main.jsx',
+      output: {
+        filename:'bundle.js'
+      },
+      module: {
+        loaders:[
+          {
+            test:/\.js[x]?$/,
+            exclude:/node_modules/,
+            loader:'babel-loader?presets[]=es2015&amp;presets[]=react'
+          },
+        ]
+      }
+    };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><blockquote><p>这时候要配置module,loaders:<br>
+模块的加载相关，我们就定义在module.loaders中。这里通过正则表达式去匹配不同后缀的文件名，然后给它们定义不同的加载器<br>
+Loaders的配置选项包括以下几方面：<br>
+test：一个匹配loaders所处理的文件的拓展名的正则表达式（必须）<br>
+loader：loader的名称（必须）<br>
+include/exclude:手动添加必须处理的文件（文件夹）或屏蔽不需要处理的文件（文件夹）（可选）；<br>
+query：为loaders提供额外的设置选项（可选）</p></blockquote> <h2 id="css-loader-加载css"><a href="#css-loader-加载css" aria-hidden="true" class="header-anchor">#</a> CSS-loader  加载css</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    配置module：
+
+    module: {
+        loaders:[
+          { test:/\.css$/, loader:'style-loader!css-loader' },
+        ]
+      }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="image-loader-加载图片"><a href="#image-loader-加载图片" aria-hidden="true" class="header-anchor">#</a> Image loader 加载图片</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    配置module：
+    module: {
+        loaders:[
+          { test:/\.(png|jpg)$/, loader:'url-loader?limit=8192' }
+        ]
+      }
+    Limit=8192，如果图片大小小于8192字节，将转换成base64编码格式显示，如果大于就按照正常的url显示；
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="css-module-加载css-模块"><a href="#css-module-加载css-模块" aria-hidden="true" class="header-anchor">#</a> CSS Module 加载css 模块</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    {
+      test:/\.css$/,
+      loader:'style-loader!css-loader?modules'
+    }
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="uglifyjs-plugin-js压缩组件"><a href="#uglifyjs-plugin-js压缩组件" aria-hidden="true" class="header-anchor">#</a> UglifyJs Plugin  js压缩组件</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    Js压缩插件配置：
+    var webpack =require('webpack');
+    var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+    module.exports = {
+      entry:'./main.js',
+      output: {
+        filename:'bundle.js'
+      },
+      plugins: [
+        newuglifyJsPlugin({
+          compress: {
+            warnings:false
+          }
+        })
+      ]
+    };
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="html-webpack-plugin-andopen-browser-webpack-plugin-webpack的html和打开浏览器插件"><a href="#html-webpack-plugin-andopen-browser-webpack-plugin-webpack的html和打开浏览器插件" aria-hidden="true" class="header-anchor">#</a> HTML Webpack Plugin andOpen Browser Webpack Plugin  webpack的html和打开浏览器插件</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    var HtmlwebpackPlugin =require('html-webpack-plugin');
+    var OpenBrowserPlugin =require('open-browser-webpack-plugin');
+
+    module.exports = {
+      entry:'./main.js',
+      output: {
+        filename:'bundle.js'
+      },
+      plugins: [
+        newHtmlwebpackPlugin({
+          title:'Webpack-demos',
+          filename:'index.html'
+        }),
+        newOpenBrowserPlugin({
+          url:'http://localhost:8080'
+        })
+      ]
+    };
+    $ Webpack 
+    Run webpack-dev-server.
+    $ webpack-dev-server
+
+    这时候不需要写一个index.html文件，也不需要手动打开浏览器输入http://localhost:8080，webpack会做这些事情；
+    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="environment-flags-环境标志"><a href="#environment-flags-环境标志" aria-hidden="true" class="header-anchor">#</a> Environment flags  环境标志</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    main.js
+
+    document.write('&lt;h1&gt;Hello World&lt;/h1&gt;');
+
+    if (__DEV__) {
+      document.write(newDate());
+    }
+    index.html
+
+    &lt;html&gt;
+    &lt;body&gt;
+      &lt;scriptsrc=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    webpack.config.js
+
+    var webpack =require('webpack');
+
+    var devFlagPlugin =newwebpack.DefinePlugin({
+      __DEV__:JSON.stringify(JSON.parse(process.env.DEBUG||'false'))
+    });
+
+    module.exports = {
+      entry:'./main.js',
+      output: {
+        filename:'bundle.js'
+      },
+      plugins: [devFlagPlugin]
+    };
+    Now passenvironment variable into webpack.
+
+    # Linux &amp; Mac
+    $ env DEBUG=true webpack-dev-server
+
+    # Windows
+    $ set DEBUG=true
+    $ webpack-dev-server
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h2 id="code-splitting-代码分离"><a href="#code-splitting-代码分离" aria-hidden="true" class="header-anchor">#</a> Code splitting 代码分离</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    you use require.ensure to define a split point. (official document)
+    // main.js
+    require.ensure(['./a'], function(require) {
+      var content =require('./a');
+      document.open();
+      document.write('&lt;h1&gt;'+ content +'&lt;/h1&gt;');
+      document.close();
+    });
+    require.ensure tells Webpack that ./a.js should be separated from bundle.js and built into a single chunk file.
+    // a.js
+    module.exports ='Hello World';
+    Now Webpack takes care of the dependencies, outputfiles and runtime stuff. You don't have to put any redundancy into your index.html and webpack.config.js.
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;scriptsrc=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    webpack.config.js
+
+    module.exports = {
+      entry:'./main.js',
+      output: {
+        filename:'bundle.js'
+      }
+    };
+    Launch theserver.
+
+    $ webpack-dev-server 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="code-splitting-withbundle-loader"><a href="#code-splitting-withbundle-loader" aria-hidden="true" class="header-anchor">#</a> Code splitting withbundle-loader</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    Another wayof code splitting is using bundle-loader.
+
+    // main.js
+
+    // Now a.js is requested, it will be bundled into another file
+    var load =require('bundle-loader!./a.js');
+
+    // To wait until a.js is available (and get the exports)
+    //  you need to async wait for it.
+    load(function(file) {
+      document.open();
+      document.write('&lt;h1&gt;'+ file +'&lt;/h1&gt;');
+      document.close();
+    });
+    require('bundle-loader!./a.js') tells Webpack to load a.js from another chunk.
+    Now Webpack will build main.js into bundle.js, and a.js into 1.bundle.js.
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="common-chunk-通用模块"><a href="#common-chunk-通用模块" aria-hidden="true" class="header-anchor">#</a> Common chunk  通用模块</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    When multiscripts have common chunks, you can extract the common part into a separatefile with CommonsChunkPlugin.
+
+    // main1.jsx
+    var React =require('react');
+    var ReactDOM =require('react-dom');
+
+    ReactDOM.render(
+      &lt;h1&gt;Hello World&lt;/h1&gt;,
+      document.getElementById('a')
+    );
+
+    // main2.jsx
+    var React =require('react');
+    var ReactDOM =require('react-dom');
+
+    ReactDOM.render(
+      &lt;h2&gt;Hello Webpack&lt;/h2&gt;,
+      document.getElementById('b')
+    );
+    index.html
+
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;divid=&quot;a&quot;&gt;&lt;/div&gt;
+        &lt;divid=&quot;b&quot;&gt;&lt;/div&gt;
+        &lt;scriptsrc=&quot;init.js&quot;&gt;&lt;/script&gt;
+        &lt;scriptsrc=&quot;bundle1.js&quot;&gt;&lt;/script&gt;
+        &lt;scriptsrc=&quot;bundle2.js&quot;&gt;&lt;/script&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    webpack.config.js
+
+    var CommonsChunkPlugin =require(&quot;webpack/lib/optimize/CommonsChunkPlugin&quot;);
+    module.exports = {
+      entry: {
+        bundle1:'./main1.jsx',
+        bundle2:'./main2.jsx'
+      },
+      output: {
+        filename:'[name].js'
+      },
+      module: {
+        loaders:[
+          {
+            test:/\.js[x]?$/,
+            exclude:/node_modules/,
+            loader:'babel-loader',
+            query: {
+              presets: ['es2015', 'react']
+            }
+          },
+        ]
+      },
+      plugins: [
+        newCommonsChunkPlugin('init.js')
+      ]
+    }
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br></div></div><h2 id="vendor-chunk"><a href="#vendor-chunk" aria-hidden="true" class="header-anchor">#</a> Vendor chunk</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    You can alsoextract the vendor libraries from a script into a separate file withCommonsChunkPlugin.
+
+    main.js
+
+    var $ =require('jquery');
+    $('h1').text('Hello World');
+    index.html
+
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;h1&gt;&lt;/h1&gt;
+        &lt;scriptsrc=&quot;vendor.js&quot;&gt;&lt;/script&gt;
+        &lt;scriptsrc=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    webpack.config.js
+
+    var webpack =require('webpack');
+
+    module.exports = {
+      entry: {
+        app:'./main.js',
+        vendor: ['jquery'],
+      },
+      output: {
+        filename:'bundle.js'
+      },
+      plugins: [
+        newwebpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.js')
+      ]
+    };
+    If you want a module available as variable in everymodule, such as making $ and jQuery available in every module without writing require(&quot;jquery&quot;). You should use ProvidePlugin (Official doc).
+    // main.js
+    $('h1').text('Hello World');
+
+
+    // webpack.config.js
+    var webpack =require('webpack');
+
+    module.exports = {
+      entry: {
+        app:'./main.js'
+      },
+      output: {
+        filename:'bundle.js'
+      },
+      plugins: [
+        newwebpack.ProvidePlugin({
+          $:&quot;jquery&quot;,
+          jQuery:&quot;jquery&quot;,
+          &quot;window.jQuery&quot;:&quot;jquery&quot;
+        })
+      ]
+    };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br></div></div><h2 id="exposing-globalvariables暴露全局变量"><a href="#exposing-globalvariables暴露全局变量" aria-hidden="true" class="header-anchor">#</a> Exposing globalvariables暴露全局变量</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>    For example, we have a data.js.
+    var data ='Hello World';
+    We can expose data as a global variable.
+    // webpack.config.js
+    module.exports = {
+      entry:'./main.jsx',
+      output: {
+        filename:'bundle.js'
+      },
+      module: {
+        loaders:[
+          {
+            test:/\.js[x]?$/,
+            exclude:/node_modules/,
+            loader:'babel-loader',
+            query: {
+              presets: ['es2015', 'react']
+            }
+          },
+        ]
+      },
+      externals: {
+        // require('data') is external and available
+        //  on the global var data
+        'data':'data'
+      }
+    };
+    Now, you require data as a module variable in your script. but it actually is a globalvariable.
+    // main.jsx
+    var data =require('data');
+    var React =require('react');
+    var ReactDOM =require('react-dom');
+
+    ReactDOM.render(
+      &lt;h1&gt;{data}&lt;/h1&gt;,
+      document.body
+    );
+
+    resolve
+
+    webpack在构建包的时候会按目录的进行文件的查找，resolve属性中的extensions数组中用于配置程序可以自行补全哪些文件后缀：
+
+     resolve:{
+         extensions:['','.js','.json']
+     }
+    然后我们想要加载一个js文件时，只要require('common')就可以加载common.js文件了。
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><blockquote><p>working  study......</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/2016/2016-10-21-hexo-markdown-command.html" class="prev">
+          2016-10-21 Hexo
+        </a></span> <span class="next"><a href="/blog/2016/2016-10-23-jq-plugin-dev.html">
+          2016-10-23 jQuery插件开发
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cb2f3e4e.js" defer></script><script src="/assets/js/2.5cf661ab.js" defer></script><script src="/assets/js/10.6edd5b2c.js" defer></script>
+  </body>
+</html>
