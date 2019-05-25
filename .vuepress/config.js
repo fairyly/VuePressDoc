@@ -18,7 +18,8 @@ module.exports = {
       {
         text: '前端',
         items: [
-          { text: '面试', link: '/interview/' }
+          { text: '面试', link: '/interview/' },
+          { text: 'React', link: '/React/' }
         ]
       },
       {

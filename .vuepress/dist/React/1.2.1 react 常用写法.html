@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.2.1 react 基础写法 | 大前端</title>
+    <meta name="description" content="大前端">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.587b07ae.css" as="style"><link rel="preload" href="/assets/js/app.044c1617.js" as="script"><link rel="preload" href="/assets/js/2.5cf661ab.js" as="script"><link rel="preload" href="/assets/js/11.b6328aa3.js" as="script"><link rel="prefetch" href="/assets/js/10.cd1d4264.js"><link rel="prefetch" href="/assets/js/100.3240bd16.js"><link rel="prefetch" href="/assets/js/101.e25b7e3a.js"><link rel="prefetch" href="/assets/js/102.88c0b278.js"><link rel="prefetch" href="/assets/js/103.a4a1053f.js"><link rel="prefetch" href="/assets/js/104.45207c69.js"><link rel="prefetch" href="/assets/js/105.35dc825c.js"><link rel="prefetch" href="/assets/js/106.f634b5da.js"><link rel="prefetch" href="/assets/js/107.63ebe1b0.js"><link rel="prefetch" href="/assets/js/108.f0e2664b.js"><link rel="prefetch" href="/assets/js/109.2ca31304.js"><link rel="prefetch" href="/assets/js/110.c6e2b819.js"><link rel="prefetch" href="/assets/js/111.7976c9ab.js"><link rel="prefetch" href="/assets/js/112.485ccd4f.js"><link rel="prefetch" href="/assets/js/113.793f517a.js"><link rel="prefetch" href="/assets/js/114.0e8d7f7a.js"><link rel="prefetch" href="/assets/js/115.9a898279.js"><link rel="prefetch" href="/assets/js/116.6cae0125.js"><link rel="prefetch" href="/assets/js/117.b82b180d.js"><link rel="prefetch" href="/assets/js/12.d600be8f.js"><link rel="prefetch" href="/assets/js/13.d97eba7c.js"><link rel="prefetch" href="/assets/js/14.934041bb.js"><link rel="prefetch" href="/assets/js/15.a4443892.js"><link rel="prefetch" href="/assets/js/16.0ebcef58.js"><link rel="prefetch" href="/assets/js/17.c72650d2.js"><link rel="prefetch" href="/assets/js/18.cd38bbd8.js"><link rel="prefetch" href="/assets/js/19.929f94e2.js"><link rel="prefetch" href="/assets/js/20.6d09dbcf.js"><link rel="prefetch" href="/assets/js/21.63432cb4.js"><link rel="prefetch" href="/assets/js/22.1fbfdff3.js"><link rel="prefetch" href="/assets/js/23.1f7f95b2.js"><link rel="prefetch" href="/assets/js/24.227fad86.js"><link rel="prefetch" href="/assets/js/25.d155d59b.js"><link rel="prefetch" href="/assets/js/26.9637026f.js"><link rel="prefetch" href="/assets/js/27.0c2b253e.js"><link rel="prefetch" href="/assets/js/28.c236c972.js"><link rel="prefetch" href="/assets/js/29.9c6ddd1f.js"><link rel="prefetch" href="/assets/js/3.22732f15.js"><link rel="prefetch" href="/assets/js/30.ee0555dd.js"><link rel="prefetch" href="/assets/js/31.16452473.js"><link rel="prefetch" href="/assets/js/32.5e49c657.js"><link rel="prefetch" href="/assets/js/33.16355e5a.js"><link rel="prefetch" href="/assets/js/34.0b67e6a2.js"><link rel="prefetch" href="/assets/js/35.1fec96b6.js"><link rel="prefetch" href="/assets/js/36.68363f7d.js"><link rel="prefetch" href="/assets/js/37.fb523562.js"><link rel="prefetch" href="/assets/js/38.b37821e4.js"><link rel="prefetch" href="/assets/js/39.65769db2.js"><link rel="prefetch" href="/assets/js/4.f23d031f.js"><link rel="prefetch" href="/assets/js/40.85709546.js"><link rel="prefetch" href="/assets/js/41.cd129143.js"><link rel="prefetch" href="/assets/js/42.9942988a.js"><link rel="prefetch" href="/assets/js/43.99ca0d04.js"><link rel="prefetch" href="/assets/js/44.ecaa3c92.js"><link rel="prefetch" href="/assets/js/45.d8f8d5c0.js"><link rel="prefetch" href="/assets/js/46.9c4a770f.js"><link rel="prefetch" href="/assets/js/47.8cfef5ad.js"><link rel="prefetch" href="/assets/js/48.6c0ec442.js"><link rel="prefetch" href="/assets/js/49.5433e219.js"><link rel="prefetch" href="/assets/js/5.bc84b383.js"><link rel="prefetch" href="/assets/js/50.55ffc527.js"><link rel="prefetch" href="/assets/js/51.9b5a56b6.js"><link rel="prefetch" href="/assets/js/52.04eb91cc.js"><link rel="prefetch" href="/assets/js/53.991201a7.js"><link rel="prefetch" href="/assets/js/54.d3cbc364.js"><link rel="prefetch" href="/assets/js/55.5223e5d4.js"><link rel="prefetch" href="/assets/js/56.18b76502.js"><link rel="prefetch" href="/assets/js/57.c0f61a4b.js"><link rel="prefetch" href="/assets/js/58.9e5c1457.js"><link rel="prefetch" href="/assets/js/59.6143129d.js"><link rel="prefetch" href="/assets/js/6.0ad6f5f5.js"><link rel="prefetch" href="/assets/js/60.35619531.js"><link rel="prefetch" href="/assets/js/61.dadc29b6.js"><link rel="prefetch" href="/assets/js/62.69705c54.js"><link rel="prefetch" href="/assets/js/63.2c66e6ff.js"><link rel="prefetch" href="/assets/js/64.a7845f2f.js"><link rel="prefetch" href="/assets/js/65.97964299.js"><link rel="prefetch" href="/assets/js/66.db52d92c.js"><link rel="prefetch" href="/assets/js/67.0ea1855b.js"><link rel="prefetch" href="/assets/js/68.d2bd30d4.js"><link rel="prefetch" href="/assets/js/69.da7ee809.js"><link rel="prefetch" href="/assets/js/7.a0289794.js"><link rel="prefetch" href="/assets/js/70.c5ba7db2.js"><link rel="prefetch" href="/assets/js/71.5314e1d7.js"><link rel="prefetch" href="/assets/js/72.677ae06c.js"><link rel="prefetch" href="/assets/js/73.d4d114b5.js"><link rel="prefetch" href="/assets/js/74.5d364f49.js"><link rel="prefetch" href="/assets/js/75.4a24f8a9.js"><link rel="prefetch" href="/assets/js/76.41d237d2.js"><link rel="prefetch" href="/assets/js/77.9abcabec.js"><link rel="prefetch" href="/assets/js/78.9368caf4.js"><link rel="prefetch" href="/assets/js/79.edd84f95.js"><link rel="prefetch" href="/assets/js/8.2f17b076.js"><link rel="prefetch" href="/assets/js/80.41dec9a6.js"><link rel="prefetch" href="/assets/js/81.218d4a25.js"><link rel="prefetch" href="/assets/js/82.e2348007.js"><link rel="prefetch" href="/assets/js/83.6738b0b3.js"><link rel="prefetch" href="/assets/js/84.ff205803.js"><link rel="prefetch" href="/assets/js/85.b5d1ebbb.js"><link rel="prefetch" href="/assets/js/86.185238b5.js"><link rel="prefetch" href="/assets/js/87.c67c791d.js"><link rel="prefetch" href="/assets/js/88.f7abef37.js"><link rel="prefetch" href="/assets/js/89.3b84cc04.js"><link rel="prefetch" href="/assets/js/9.837330c8.js"><link rel="prefetch" href="/assets/js/90.1c7a72b2.js"><link rel="prefetch" href="/assets/js/91.fe447b95.js"><link rel="prefetch" href="/assets/js/92.0e6f6748.js"><link rel="prefetch" href="/assets/js/93.e9cba599.js"><link rel="prefetch" href="/assets/js/94.18dc1b5d.js"><link rel="prefetch" href="/assets/js/95.bf87e922.js"><link rel="prefetch" href="/assets/js/96.d251d48f.js"><link rel="prefetch" href="/assets/js/97.7f1fb428.js"><link rel="prefetch" href="/assets/js/98.5db5abd9.js"><link rel="prefetch" href="/assets/js/99.629a34db.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.587b07ae.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大前端</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/guide/" class="nav-link">简介</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/React/" class="nav-link router-link-active">React</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">博客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/2019/" class="nav-link">2019</a></li><li class="dropdown-item"><!----> <a href="/blog/2018/" class="nav-link">2018</a></li><li class="dropdown-item"><!----> <a href="/blog/2017/" class="nav-link">2017</a></li><li class="dropdown-item"><!----> <a href="/blog/2016/" class="nav-link">2016</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fairyly/VuePressDoc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/guide/" class="nav-link">简介</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/React/" class="nav-link router-link-active">React</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">博客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/2019/" class="nav-link">2019</a></li><li class="dropdown-item"><!----> <a href="/blog/2018/" class="nav-link">2018</a></li><li class="dropdown-item"><!----> <a href="/blog/2017/" class="nav-link">2017</a></li><li class="dropdown-item"><!----> <a href="/blog/2016/" class="nav-link">2016</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">中文</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fairyly/VuePressDoc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/React/" class="sidebar-link">react_study</a></li><li><a href="/React/1.1.1 安装 ant-design 报错.html" class="sidebar-link">1.1.1 安装 ant-design 报错</a></li><li><a href="/React/1.1.2 react 组件 api.html" class="sidebar-link">1.1.2 react 组件 api</a></li><li><a href="/React/1.1.3 React 组件生命周期.html" class="sidebar-link">1.1.3 React 组件生命周期</a></li><li><a href="/React/1.1.4 React Native运行原理.html" class="sidebar-link">1.1.4 React Native运行原理</a></li><li><a href="/React/1.1.5 react 父子组件通信.html" class="sidebar-link">1.1.5 react 父子组件通信</a></li><li><a href="/React/1.2.1 react 常用写法.html" class="active sidebar-link">1.2.1 react 基础写法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/React/1.2.1 react 常用写法.html#_1-创建-react-组件" class="sidebar-link">1.创建 React 组件</a></li><li class="sidebar-sub-header"><a href="/React/1.2.1 react 常用写法.html#_2-helloworld" class="sidebar-link">2.HelloWorld</a></li><li class="sidebar-sub-header"><a href="/React/1.2.1 react 常用写法.html#_3-jsx-中执行-js-代码-使用-javascript-code" class="sidebar-link">3.JSX 中执行 js 代码: 使用 { //javascript code }</a></li><li class="sidebar-sub-header"><a href="/React/1.2.1 react 常用写法.html#_4-样式写法" class="sidebar-link">4.样式写法</a></li><li class="sidebar-sub-header"><a href="/React/1.2.1 react 常用写法.html#_5-props-单向" class="sidebar-link">5. Props (单向)</a></li><li class="sidebar-sub-header"><a href="/React/1.2.1 react 常用写法.html#_6-state：-组件本身的状态，不和组件的父级或者子级共享" class="sidebar-link">6.state： 组件本身的状态，不和组件的父级或者子级共享</a></li><li class="sidebar-sub-header"><a href="/React/1.2.1 react 常用写法.html#_7-生命周期方法" class="sidebar-link">7.生命周期方法</a></li><li class="sidebar-sub-header"><a href="/React/1.2.1 react 常用写法.html#参考" class="sidebar-link">参考</a></li></ul></li><li><a href="/React/1.2.2 umi 使用.html" class="sidebar-link">1.2.1 umi 使用</a></li><li><a href="/React/1.2.3 react-scripts不是内部或外部命令.html" class="sidebar-link">1.2.3 'react-scripts' 不是内部或外部命令</a></li><li><a href="/React/1.2.4 使用 antd form 遇到的问题.html" class="sidebar-link">1.2.4 使用 antd form 遇到的问题</a></li><li><a href="/React/1.2.5 Create-react-app+Antd+Less配置.html" class="sidebar-link">1.2.5 Create-react-app+Antd+Less配置</a></li><li><a href="/React/1.2.5.1 react map循环一直报错Expected to return a value in arrow.html" class="sidebar-link">1.2.5.1 react Expected to return a value in arrow function</a></li><li><a href="/React/1.2.6 react组件中引用子组件问题.html" class="sidebar-link">1.2.6 react组件中引用子组件问题</a></li><li><a href="/React/1.2.6.1 vscode react 设置.html" class="sidebar-link">1.2.6.1 vscode react 配置</a></li><li><a href="/React/1.2.7 react 打包后找不到资源路径的问题.html" class="sidebar-link">1.2.7 react 打包后找不到资源路径的问题</a></li><li><a href="/React/1.2.8 react-Script URL is a form of eval.html" class="sidebar-link">1.2.8 react Script URL is a form of eval</a></li><li><a href="/React/1.2.9 react 二维码生成.html" class="sidebar-link">1.2.9 react 二维码生成</a></li><li><a href="/React/1.3.1 PureComponent 和 Component.html" class="sidebar-link">1.3.1 PureComponent 和 Component</a></li><li><a href="/React/1.3.2 React中富文本编辑器.html" class="sidebar-link">1.3.2 react 中富文本编辑器</a></li><li><a href="/React/1.3.3 react 受控组件和非受控组件.html" class="sidebar-link">1.3.3 react 受控组件和非受控组件</a></li><li><a href="/React/2.1.1 React+antd.html" class="sidebar-link">2.1.1 React + antd</a></li><li><a href="/React/2.1.2 Redux 使用.html" class="sidebar-link">2.1.2 Redux 使用</a></li><li><a href="/React/2.1.3 引入 eslint+changelog 等规范.html" class="sidebar-link">2.1.3 规范</a></li><li><a href="/React/2.1.4 react-route 使用.html" class="sidebar-link">2.1.4 react router 使用</a></li><li><a href="/React/2.1.5 react 图表库使用.html" class="sidebar-link">2.1.5 react 图表库</a></li><li><a href="/React/深入 react.html" class="sidebar-link">深入 React</a></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="_1-2-1-react-基础写法"><a href="#_1-2-1-react-基础写法" aria-hidden="true" class="header-anchor">#</a> 1.2.1 react 基础写法</h1> <h2 id="_1-创建-react-组件"><a href="#_1-创建-react-组件" aria-hidden="true" class="header-anchor">#</a> 1.创建 React 组件</h2> <ul><li>1.1 <code>class Component extends React.Component</code></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>import React from 'react';
+
+class Component extends React.Component {
+    //needs render function
+    render() {
+        return (
+            //return should tell React what the DOM should look like
+            //if this component is rendered in the browser
+        );
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li>1.2 function</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Component(props) {
+    return (
+        //return should tell React what the DOM should look like
+        //if this component is rendered in the browser
+    );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_2-helloworld"><a href="#_2-helloworld" aria-hidden="true" class="header-anchor">#</a> 2.HelloWorld</h2> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">HelloWorld</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//function must return something</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token comment">//return should tell React to render Hello World in the browser</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// div</span>
+    <span class="token comment">// &lt;div&gt;Hello World&lt;/div&gt;</span>
+
+    <span class="token comment">// jsx</span>
+    <span class="token comment">// return React.createElement('div', null, 'Hello World');</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>html</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;th&gt;
+            &lt;td&gt;Col&lt;/td&gt;
+        &lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Cell&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>React.createElement</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>React.createElement('table', null, 
+    [
+        React.createElement('thead', null, 
+            React.createElement('th', null,
+                React.createElement('td', null, 'Col')
+            )
+        ),
+        React.createElement('tbody', null, 
+            React.createElement('tr', null,
+                React.createElement('td', 'null', 'Cell')
+            )
+        )
+    ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="_3-jsx-中执行-js-代码-使用-javascript-code"><a href="#_3-jsx-中执行-js-代码-使用-javascript-code" aria-hidden="true" class="header-anchor">#</a> 3.JSX 中执行 js 代码: 使用 <code>{ //javascript code }</code></h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>function CompanyProfile(props) {
+    //ticker and companyProfileInfo stored in a variable
+    const ticker = 'APPL';
+    const companyProfileInfo = {
+        'Company Name': 'Apple Inc.',
+        'Exchange': 'Nasdaq',
+        'Sector': 'Technology',
+        'Industry': 'Computer Hardware',
+        'CEO': 'Timothy D. Cook'
+    };
+    return (
+        &lt;div&gt;
+            &lt;div&gt;Profile of: {ticker}&lt;/div&gt;
+            &lt;div&gt;
+                {
+                    {/*This is javascript code inside the curly braces*/}
+                    Object.keys(companyProfileInfo)
+                        .map((key, index) =&gt; {
+                            return &lt;div&gt;{key}: {companyProfileInfo[key]}&lt;/div&gt;
+                        })
+                }
+            &lt;/div&gt;
+        &lt;/div&gt;
+    )
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><blockquote><p>注意：一个组件中必须只有一个根标签，
+如：</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>return (
+    &lt;div&gt;
+        &lt;div&gt;
+            &lt;div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>而不是下面这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 这样写就是错误的
+return ( 
+    &lt;div&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;/div&gt;
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_4-样式写法"><a href="#_4-样式写法" aria-hidden="true" class="header-anchor">#</a> 4.样式写法</h2> <ul><li>4.1 style:</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>## html 中
+&lt;div style=&quot;bottom-border: 1px solid green&quot;&gt;&lt;/div&gt;
+
+## react JSX 中，css 属性驼峰命名
+&lt;div style={{ bottomBorder: `1px solid green`}}&gt;&lt;/div&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>4.2 class</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>## html 中
+&lt;div class=&quot;container&quot;&gt;&lt;/div&gt;
+
+## react JSX 中
+&lt;div className={&quot;container&quot;}&gt;&lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>4.2.1 多个 class 判断</li></ul> <blockquote><p>使用一个小工具 classNames:</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>使用方法:
+
+import classnames from 'classnames';
+classNames('foo', 'bar'); // =&gt; 'foo bar'
+classNames('foo', { bar: true }); // =&gt; 'foo bar'
+classNames({ 'foo-bar': true }); // =&gt; 'foo-bar'
+classNames({ 'foo-bar': false }); // =&gt; ''
+classNames({ foo: true }, { bar: true }); // =&gt; 'foo bar'
+classNames({ foo: true, bar: true }); // =&gt; 'foo bar'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li><p><a href="https://github.com/JedWatson/classnames" target="_blank" rel="noopener noreferrer">JedWatson/classnames<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p>4.3 Event</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>## html 中
+&lt;div onclick=&quot;clickHandler()&quot;&gt;&lt;/div&gt;
+
+## react JSX 中
+div onClick={function(){ alert('clicked')}}&gt;
+
+function ClickableButton(props){
+    //callback function that's called when button is clicked
+    const handleClick = () =&gt; { alert('Clicked') }
+    return (
+        &lt;button onClick={handleClick}&gt;&lt;/button&gt;
+    )
+}
+
+
+# Function Binding
+class Input extends React.Component {
+    constructor(props){
+        super(props);
+        
+        //bind handleChange function to proper this
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(e){
+        this.setState({
+            inputValue: e.target.value
+        });
+    }
+
+    render(){
+        return(
+            &lt;input onChange={this.handleChange} value={this.state.inputValue}/&gt;
+        )
+    }
+}
+
+# react 向事件处理程序传递参数
+
+
+&lt;button onClick={this.editRow.bind(this, id)}&gt;Delete Row&lt;/button&gt;
+
+editRow(id, e) {
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><h2 id="_5-props-单向"><a href="#_5-props-单向" aria-hidden="true" class="header-anchor">#</a> 5. Props (单向)</h2> <blockquote><p>父子组件传参数 props， 子组件不能修改 props 中参数</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>function Children(props) {
+    return (
+        &lt;div&gt;{props.textToDisplay}&lt;/div&gt;
+    )
+}
+
+function Parent(props) {
+    return (
+        &lt;Children textToDisplay={'Hello'}&gt;&lt;/Children&gt;
+    )
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><blockquote><p>在多数情况下，组件最好明确定义一个 props 可以接受的数据类型，数据结构，</p></blockquote> <ul><li><p>prop-types： <a href="https://github.com/facebook/prop-types" target="_blank" rel="noopener noreferrer">facebook/prop-types<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <ul><li><p>.isRequired: 如果 <code>PropTypes.string.isRequired,</code> 那就是必选的；如果 <code>PropTypes.string</code>,那就是可选的；</p></li> <li><p>defaultProps： 通过赋值特定的 defaultProps 属性为 props 定义默认值</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 任何东西都可以被渲染:numbers, strings, elements,或者是包含这些类型的数组(或者是片段)。
+optionalNode: PropTypes.node,
+
+// 一个 React 元素。
+optionalElement: PropTypes.element,
+
+// 你也可以声明一个 prop 是类的一个实例。 
+// 使用 JS 的 instanceof 运算符。
+optionalMessage: PropTypes.instanceOf(Message),
+
+// 你可以声明 prop 是特定的值，类似于枚举
+optionalEnum: PropTypes.oneOf(['News', 'Photos']),
+
+// 一个对象可以是多种类型其中之一
+optionalUnion: PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.number,
+  PropTypes.instanceOf(Message)
+]),
+
+// 一个某种类型的数组
+optionalArrayOf: PropTypes.arrayOf(PropTypes.number),
+
+// 属性值为某种类型的对象
+optionalObjectOf: PropTypes.objectOf(PropTypes.number),
+
+// 一个特定形式的对象
+optionalObjectWithShape: PropTypes.shape({
+  color: PropTypes.string,
+  fontSize: PropTypes.number
+}),
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div></li></ul> <p>使用 ：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 安装
+yarn add prop-types
+
+
+# 使用
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class SoftwareEngineer extends React.Component {
+    render(){
+        return (...)
+    }
+}
+
+//defines &quot;propTypes&quot; property in this component
+SoftwareEngineer.propTypes = {
+    name: PropTypes.string.isRequired, //expects string and is required
+    hobbies: PropTypes.arrayOf(PropTypes.string), //expects array of string
+    address: PropTypes.shape({
+        street: PropTypes.string,
+        city: PropTypes.string
+    }) //must be an object with 'street' and 'city' fields
+}
+
+
+# 指定 props 的默认值：
+class Greeting extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;
+    );
+  }
+}
+
+// 指定 props 的默认值：
+Greeting.defaultProps = {
+  name: 'Stranger'
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><h2 id="_6-state：-组件本身的状态，不和组件的父级或者子级共享"><a href="#_6-state：-组件本身的状态，不和组件的父级或者子级共享" aria-hidden="true" class="header-anchor">#</a> 6.state： 组件本身的状态，不和组件的父级或者子级共享</h2> <blockquote><p>state 只是一个对象</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>class Component extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            counter: 0 
+        }
+    }
+
+    render() {
+        return &lt;div&gt;{this.state.counter}&lt;/div&gt;
+    }
+}
+                {
+                    Object.keys(companyProfileInfo)
+                        .map((key, index) =&gt; {
+                            return &lt;div&gt;{key}: {companyProfileInfo[key]}&lt;/div&gt;
+                        })
+                }
+            &lt;/div&gt;
+    )
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><ul><li>6.1 状态更新,必须使用 <code>setState</code></li></ul> <blockquote><p>当 state 发生变化时，React 会重新渲染你的组件,<br>
+setState 函数的是异步的</p></blockquote> <ul><li><a href="https://github.com/facebook/react/issues/11527#issuecomment-360199710" target="_blank" rel="noopener noreferrer">why is <code>setState</code> asynchronous? <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.setState({
+    counter: 2
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><p>为什么setState是异步的?有人再react官网上提过了的issue，Dan Abramov的回复:</p></blockquote> <ul><li><p>保证内部的一致性,因为更新props的机制可以理解成异步的，那么更新state的机制也要理解成异步的</p></li> <li><p>在许多情况下setState（）重新渲染的同步效率很低，而异步可以将几个state合并执行,提高效率。</p></li> <li><p>可以利用异步的特性处理很多事情，如果在开始的页面设了一些异步操作，<br>
+然后去跳了路由换了页面，那么原先的页面即使不展示了，还会继续执行那些异步的东西。</p></li> <li><p>6.2 使用当前的 state 值去更新 state,</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>//If you are using current state value to update the state, always use updater function
+console.log(this.state.counter); //prints 0
+this.setState((state) =&gt; ({ counter: state.counter + 1}) );
+this.setState((state) =&gt; ({ counter: state.counter + 1}) );
+this.setState((state) =&gt; ({ counter: state.counter + 1}) );
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><p>state 和 props 主要的区别在于: props 是不可变的,而 state 可以根据与用户交互来改变</p></blockquote> <h2 id="_7-生命周期方法"><a href="#_7-生命周期方法" aria-hidden="true" class="header-anchor">#</a> 7.生命周期方法</h2> <blockquote><p>哪种方式定义的组件，<strong>其组件名都必须是大写</strong></p></blockquote> <blockquote></blockquote> <p>1.componentDidMount 是进行网络调用的正确生命周期方法（使用API​​获取数据），当组件挂载在DOM上时 componentDidMount 只调用一次；
+2.可以使用 componentDidUpdate，每次更新组件时都会调用此生命周期方法；
+版本17.0的一部分弃用，因此请勿使用它们</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>componentWillMount
+componentWillUpdate
+componentWillReceiveProps
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><p>参考：<a href="https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path" target="_blank" rel="noopener noreferrer">update-on-async-rendering<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p>demo:</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>class ComponentWithLifecycle extends React.Component {
+    constructor(props){
+        super(props);
+    }
+
+    componentDidMount(){
+        //This will be called after the component is mounted to the DOM
+    }
+
+    componentDidUpdate(prevProps, prevState){
+        //This will be called after the component is updated
+        //Remember component can only be updated when the state changes
+        //or the props changes
+    }
+
+    componentWillUnmount(){
+        //This will be called right before this component is unmounted from
+        //the DOM
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="参考"><a href="#参考" aria-hidden="true" class="header-anchor">#</a> 参考</h2> <ul><li><a href="https://reactjs.org/docs/hello-world.html" target="_blank" rel="noopener noreferrer">docs<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://github.com/tyroprogrammer/learn-react-app" target="_blank" rel="noopener noreferrer">tyroprogrammer/learn-react-app<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://react.html.cn/docs/typechecking-with-proptypes.html" target="_blank" rel="noopener noreferrer">typechecking-with-proptypes<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/React/1.1.5 react 父子组件通信.html" class="prev">
+          1.1.5 react 父子组件通信
+        </a></span> <span class="next"><a href="/React/1.2.2 umi 使用.html">
+          1.2.1 umi 使用
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.044c1617.js" defer></script><script src="/assets/js/2.5cf661ab.js" defer></script><script src="/assets/js/11.b6328aa3.js" defer></script>
+  </body>
+</html>
